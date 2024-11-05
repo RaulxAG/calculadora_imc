@@ -1,3 +1,4 @@
+/* ESTILOS GLOBALES */
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +42,8 @@ main h1 {
     /* padding: 1rem; */
     position: relative;
 }
+
+/* ESTILOS FORMULARIO IMC */
 
 form {
     padding: 6rem 3rem;
@@ -100,4 +103,111 @@ form input[type="submit"]:hover, form input[type="submit"]:focus {
 
 form input[type="submit"]:active {
     background-color: #c9772f;
+}
+
+/* ESTILOS IMC CALCULADO */
+
+.box > svg {
+    width: 3rem;
+    transition: fill .3s linear;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+}
+
+.box > svg:hover {
+    fill: #ad6729;
+}
+
+#result {
+    padding-top: 2rem;
+    font-size: 90px;
+    text-align: center;
+}
+
+article p {
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 24px;
+}
+
+.bajo-peso {
+    background-color: #baeae4;
+    color: #2f2f2f !important;
+}
+
+.peso-normal {
+    background-color: #88c46d;
+    color: #2f2f2f !important;
+}
+
+.sobrepeso {
+    background-color: #ead957;
+    color: #2f2f2f !important;
+}
+
+.obesidad-i {
+    background-color: #f1b048;
+    color: #2f2f2f !important;
+}
+
+.obesidad-ii {
+    background-color: #ed882a;
+    color: #2f2f2f !important;
+}
+
+.obesidad-iii {
+    background-color: #f14848;
+    color: #2f2f2f !important;
+}
+
+.graphic {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.classification {
+    width: 16.66666666666667%;
+    text-align: center;
+    background-color: #ad6729;
+    padding-block: 1.2rem;
+    position: relative;
+}
+
+.classification span {
+    text-align: center;
+    width: 100%;
+    color: #c6c6ba;
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    border-radius: 5px;
+}
+
+.classification:nth-child(1) {
+    background-color: #baeae4;
+}
+
+.classification:nth-child(2) {
+    background-color: #88c46d;
+}
+
+.classification:nth-child(3) {
+    background-color: #ead957;
+}
+
+.classification:nth-child(4) {
+    background-color: #f1b048;
+}
+
+.classification:nth-child(5) {
+    background-color: #ed882a;
+}
+
+.classification:nth-child(6) {
+    background-color: #f14848;
 }
