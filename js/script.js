@@ -112,6 +112,12 @@ function calculate(event) {
                         </section>`
 
             document.getElementsByClassName('box')[0].innerHTML += resultInfoHtml;
+
+            // Obtener elementos y agregar la clase 'visible' después de un pequeño retraso
+            setTimeout(() => {
+                document.querySelector('article').classList.add('visible');
+                document.querySelector('.graphic').classList.add('visible');
+            }, 100);
         }
     }, 30);
     
